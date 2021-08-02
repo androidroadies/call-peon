@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "433618368012",
+    "project_id": "call-peon",
+    "storage_bucket": "call-peon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433618368012:android:ae6c3bed915ed0bcc3e029",
+        "android_client_info": {
+          "package_name": "com.skywave.callpeon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433618368012-t41mv6h766fi9vatut0m798e04vjcn7b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhkGKTOAIdzCgS0zGTpXPkfvuNecYnwLI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433618368012-t41mv6h766fi9vatut0m798e04vjcn7b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
