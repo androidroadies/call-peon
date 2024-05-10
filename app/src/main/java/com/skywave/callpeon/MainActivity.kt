@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         requestQueue = getRequestQueue()
         btnSend = findViewById(R.id.btnSend)
 //        Company LoggedIn
-        btnSend?.visibility = View.GONE
+        btnSend?.visibility = View.VISIBLE
         btnSend?.setOnClickListener {
             sendNotification()
         }
