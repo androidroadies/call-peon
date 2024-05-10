@@ -38,10 +38,16 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
             setupChannels(notificationManager)
         }
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
-        val pendingIntent = PendingIntent.getActivity(
-            this, 0, intent,
-            PendingIntent.FLAG_ONE_SHOT
-        )
+//        val pendingIntent = PendingIntent.getActivity(
+//            this, 0, intent,
+//            PendingIntent.FLAG_ONE_SHOT
+//        )
+        var pendingIntent: PendingIntent? = null
+        pendingIntent = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_MUTABLE)
+        } else {
+            PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_ONE_SHOT or PendingIntent.FLAG_MUTABLE)
+        }
         val largeIcon = BitmapFactory.decodeResource(
             resources,
             R.drawable.app_icon
